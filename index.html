@@ -96,6 +96,16 @@
       width: 100%;
       color: #555;
     }
+    @media print {
+      .container {
+        border: none; /* Removes border when printing */
+        box-shadow: none; /* Removes any shadow effects */
+      }
+
+      .reveal-button {
+        display: none; /* Hides the reveal button when printing */
+      }
+    }
   </style>
   <script>
     let clickCount = 0;
